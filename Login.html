@@ -4,18 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle Producto</title>
+  <title>Registro</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="font.css">
 </head>
 
-<body class="bg-dark">
+<body>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar bg-dark-subtle border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
       <div class="container-fluid text-white">
         <img src="icons\anonymous_mask.png" alt="">
         <a class="navbar-brand text-white" href="#">TechTreasureTroop</a>
@@ -26,7 +31,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-
               <a class="nav-link active text-white" aria-current="page" href="#"><svg class="m-1"
                   xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19" fill="none">
                   <path
@@ -45,56 +49,150 @@
                     fill="#7A7A7A" />
                 </svg>Carrito</a>
             </li>
+
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control w-75 me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-light btn-outline link-offset-2" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
   </header>
-  <div id="registro-cont" class=" bg-danger">
-  <div id="registro" class="bg-light d-flex container-md flex-column">
-    <div id="titulo" class="text-center border-black border-bottom border-success-subtle">
-      <h1 class="title">Registro</h1>
-    </div>
-    <div id="registro-header" class="container">
-      <h4 class="p-1 text-dark">Ingreso de datos</h4>
-      <p class="text">Registro nos permitirá conocerte y no tener que solicitarte los datos nuevamente cuando quieras comprar en TechTreasureTroop Los campos marcados (*) deben ser llenados obligatoriamente.</p>
-      <div id="form1" class="w-100 d-flex gap-4">
-        <div id="form1-left" class="w-50  gap-4 d-flex flex-column">
-          <div id="form1-rut">
-            <label for="rut" class="form-label">Rut*</label>
-            <input type="text" id="rut" class="form-control w-75">
-          </div>
-          <div id="form1-telefonoPrincipal">
-            <label for="telefonPrincipal" class="form-label">Telefono Principal Movil o fijo*</label>
-            <input type="text" id="telefonPrincipal" class="form-control w-75">
-          </div>
-          <div id="form1-email">
-            <label for="email" class="form-label">Email*</label>
-            <input type="email" id="email" class="form-control w-75">
-          </div>
+  <main class="container p-2 rounded-2 bg-white">
+    <div id="registro" class="bg-light d-flex container-md flex-column row-gap-3">
+      <div id="titulo" class="d-flex border-black border-bottom border-success-subtle pb-3 pt-3">
+        <h1 class="">
+          <svg width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="#" />
+            <path
+              d="M38.7669 40.9992C38.1598 40.9992 37.663 40.5042 37.663 39.8992V37.6992C37.663 35.8842 36.1727 34.3992 34.3512 34.3992H25.5197C23.6982 34.3992 22.2079 35.8842 22.2079 37.6992V39.8992C22.2079 40.5042 21.7111 40.9992 21.1039 40.9992C20.4968 40.9992 20 40.5042 20 39.8992V37.6992C20 34.6632 22.4728 32.1992 25.5197 32.1992H34.3512C37.3981 32.1992 39.8709 34.6632 39.8709 37.6992V39.8992C39.8709 40.5042 39.3741 40.9992 38.7669 40.9992Z"
+              fill="black" />
+            <path
+              d="M29.5197 29.9999C26.4728 29.9999 24 27.536 24 24.5C24 21.464 26.4728 19 29.5197 19C32.5666 19 35.0394 21.464 35.0394 24.5C35.0394 27.536 32.5666 29.9999 29.5197 29.9999ZM29.5197 21.2C27.6982 21.2 26.2079 22.685 26.2079 24.5C26.2079 26.315 27.6982 27.8 29.5197 27.8C31.3412 27.8 32.8315 26.315 32.8315 24.5C32.8315 22.685 31.3412 21.2 29.5197 21.2Z"
+              fill="black" />
+          </svg>
+          Registra tu cuenta
+      </div>
+      <div id="registro-datosPers" class="border-black border-bottom border-success-subtle pb-5">
+        <div id="datosPers-titulo">
+          <h4>Ingreso de datos</h4>
+          <p>Registro nos permitirá conocerte y no tener que solicitarte los datos nuevamente cuando quieras
+            comprar en TechTreasureTroop Los campos marcados (*) deben ser llenados obligatoriamente.</p>
         </div>
-        <div id="form1-right" class="w-50 d-flex flex-column gap-4">
-          <div id="form1-nombre">
-            <label for="nombre" class="form-label">Nombre*</label>
-            <input type="text" id="nombre" class="form-control w-75">
+        <div id="forms1" class="d-md-flex gap-4">
+          <div id="form1-left" class="flex-fill gap-4 d-flex flex-column">
+            <div id="rut">
+              <label class="form-label" for="rut">Rut*</label>
+              <input type="text" id="f.rut" class="form-control w-75 w-75">
+            </div>
+            <div id="telefonoPrincipal">
+              <label class="form-label" for="telefonPrincipal">Teléfono Principal Móvil o
+                fijo*</label>
+              <input type="text" id="f.telefonPrincipal" class="form-control w-75 w-75">
+            </div>
+            <div id="email">
+              <label class="form-label" for="email">Email*</label>
+              <input type="email" id="f.email" class="form-control w-75 w-75">
+            </div>
           </div>
-          <div id="form1-telefonOpc" >
-            <label for="telefonopc" class="form-label">Telefono Opcional</label>
-            <input type="text" id="telefonopc" class="form-control w-75">
+          <div id="form1-right" class="flex-fill d-flex flex-column gap-4">
+            <div id="form1-nombre">
+              <label class="form-label" for="nombre">Nombre*</label>
+              <input type="text" id="f.nombre" class="form-control w-75 w-75">
+            </div>
+            <div id="telefonOpc">
+              <label class="form-label" for="telefonopc">Teléfono Opcional</label>
+              <input type="text" id="f.telefonopc" class="form-control w-75 w-75">
+            </div>
           </div>
         </div>
       </div>
+      <div id="direccion-contraseña-cont" class="container">
+        <div class="row">
+          <!-- Registro Dirección -->
+          <div class="col-md-6 d-flex flex-column gap-4" id="registro-direccion">
+            <div id="direccion-titulo" class="pt-3">
+              <h3>Crea tu nueva dirección</h3>
+            </div>
+            <div id="forms2" class="d-flex gap-4 flex-column">
+              <div id="nombredireccion">
+                <label class="form-label" for="f.nombredireccion">Nombre dirección</label>
+                <input class="form-control" id="f.nombredireccion" type="text">
+              </div>
+              <div id="direccion">
+                <label class="form-label" for="f.direccion">Dirección</label>
+                <input class="form-control" id="f.direccion" type="text">
+              </div>
+              <div id="numerodireccion">
+                <label class="form-label" for="f.numerodireccion">Numero dirección</label>
+                <input class="form-control" id="f.numerodireccion" type="text">
+              </div>
+              <div id="piso/oficina/apto/depto">
+                <label class="form-label" for="f.piso/oficina/apto/depto">Piso/oficina/apto/depto.</label>
+                <input id="f.piso/oficina/apto/depto" type="text" class="form-control">
+              </div>
+              <div id="comuna">
+                <label class="form-label" for="f.comuna">Comuna</label>
+                <input class="form-control" id="f.comuna" type="text">
+              </div>
+              <div id="region">
+                <label class="form-label" for="f.region">Región</label>
+                <input class="form-control" id="f.region" type="text">
+              </div>
+              <div id="ciudad">
+                <label class="form-label" for="f.ciudad">Ciudad</label>
+                <input class="form-control" id="f.ciudad" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Registro Contraseña -->
+          <div class="col-md-6 d-flex flex-column gap-4" id="registro-contraseña">
+            <div id="contraseña-titulo" class="pt-3">
+              <h3>Cree su contraseña*</h3>
+            </div>
+            <div id="form3" class="d-flex gap-4 flex-column">
+              <div id="contraseña">
+                <label class="form-label" for="f.contraseña">Contraseña</label>
+                <input class="form-control" type="password" id="f.contraseña">
+              </div>
+              <div id="confirmar.contraseña">
+                <label class="form-label" for="f.confirmar.contraseña">Confirmar Contraseña</label>
+                <input class="form-control" type="password" id="f.confirmar.contraseña">
+              </div>
+            </div>
+            <div id="boton-registrar">
+              <p>Su contraseña debe contener mínimo 7 dígitos, al menos una letra Mayúscula, números y símbolos tales
+                como @%!*?&</p>
+              <button class="btn btn-light">Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
-    <div id="registro-section">
-      <div><h4>Crea tu nueva dirección</h4></div>
-      <div id=""></div>
-    </div>
-  </div>
-</div>
+  </main>
+  <footer>
+    <nav class="navbar bg-dark-subtle border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
+      <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
+        <h4 class="text-white">Ventas</h4>
+        <h5 class="text-white">+56927744345</h5>
+      </div>
+      <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
+        <h4 class="text-white text-center">
+          Ventas Empresas</h4>
+        <a href="formulario.html" class="text-white text-decoration-none">Contacto Venta Empresa</a>
+      </div>
+      <div class="d-flex flex-fill justify-content-center">
+        <a href="" class="text-white text-decoration-none">
+          <img class="navbar-brand" src="icons\anonymous_mask.png" alt="">
+          TechTreasureTroop
+        </a>
+      </div>
+    </nav>
+  </footer>
 </body>
 
 </html>
