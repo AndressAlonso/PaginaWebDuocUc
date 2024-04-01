@@ -1,3 +1,18 @@
-header{
-    height: 60vw;
+h1{
+    background-color: #c3fc9d;
+    padding: 10px 2vw; 
+}
+h2,p{
+    padding: 0px 2vw;  
+}
+.form-control{
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px;
+}
+.form-label{
+    background-color: #c3fc9d;
+    padding: 5px 1vw;
+}
+.p-3 > button{
+    padding: 20px 10vw;  
 }
