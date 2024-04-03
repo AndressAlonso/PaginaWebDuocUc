@@ -10,36 +10,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <style>
-    h1 {
-      background-color: #c3fc9d;
-      padding: 10px 2vw;
-    }
-
-    h2,
-    p {
-      padding: 0px 2vw;
-    }
-
-    .form-control {
-      box-sizing: border-box;
-      box-shadow: 5px 5px 15px;
-    }
-
-    .form-label {
-      background-color: #c3fc9d;
-      padding: 5px 1vw;
-    }
-
-    .p-3>button {
-      padding: 20px 10vw;
-    }
-  </style>
+    <link rel="stylesheet" href="">
 </head>
 
-<body class="bg-dark">
+<body class="">
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar bg-dark-subtle border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
       <div class="container-fluid text-white">
         <img src="icons\anonymous_mask.png" alt="">
         <a class="navbar-brand text-white" href="#">TechTreasureTroop</a>
@@ -68,107 +44,87 @@
                     fill="#7A7A7A" />
                 </svg>Carrito</a>
             </li>
+
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control w-75 me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-light btn-outline link-offset-2" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
-    <div class="bg-white">
-      <div class="container p-4 text-start">
-        <div class="row align-items-end">
-          <div class="col">
-            <h1>Contactanos</h1>
-          </div>
-        </div>
-      </div>
-      <div class="container px-7 text-start">
-        <div class="row align-items-end">
-          <div class="col">
-            <h2>Formulario de contacto</h2>
-            <p>Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos solicitados en el
-              siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
-              horas hábiles. Recuerda que nuestros horarios de atencion son: lunes a domingo desde las 09:00 hasta las
-              18:00 hrs, excepto feriados/festivos.</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="formularios">
-        <div class="row">
-          <div class="col-md-6 d-flex flex-column gap-4 flex-fill" id="formulario-left">
-            <div class="col-6">
-              <div class="p-3">
-                <label for="FormControlInput" class="form-label">Nombre</label>
-                <input type="nombre" class="form-control" id="FormControlNombre" placeholder="Ingrese su nombre">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-3"><label for="FormControlInput" class="form-label">Apellido</label>
-                <input type="apellido" class="form-control" id="FormControlApellido"
-                  placeholder="Ingrese su Apellido">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-3"><label for="FormControlInput" class="form-label">Rut</label>
-                <input type="rut" class="form-control" id="FormControlRut" placeholder="Ingrese su Rut">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-3"><label for="FormControlInput" class="form-label">Telefono</label>
-                <input type="telefono" class="form-control" id="FormControlTelefono"
-                  placeholder="Ingrese su Telefono">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex flex-column gap-4 flex-fill" id="formulario-right">
-
-
-            <div class="col-6">
-              <div class="p-3"><label for="exampleDataList" class="form-label">Motivo</label>
-                <input class="form-control" list="datalistOptions" id="DataListMotivo"
-                  placeholder="-Seleccione un motivo-">
-                <datalist id="datalistOptions">
-                  <option value="Consultas">
-                  <option value="Solicitudes">
-                  <option value="Reclamos">
-                </datalist>
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="p-3"><label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="FormControlEmail" placeholder="Ejemplo:name@example.com">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-3"><label for="FormControlInput" class="form-label">Numero de Boleta o Factura</label>
-              <input type="Boleta" class="form-control" id="FormControlBoleta" placeholder=""></div>
-          </div>
-          </div>
-            <div class="col-6">
-              <div class="p-3"><label for="FormControlInput" class="form-label">Clasificación</label>
-                <input type="Calsificacion" class="form-control" id="FormControlBoleta" placeholder="">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-3"><label for="FormControlText" class="form-label">Comentarios</label>
-                <textarea placeholder="Ingrese su comentario" class="form-control" id="FormControlText"
-                  rows="5"></textarea>
-              </div>
-            </div>
-            <div class="col-6 d-flex justify-content-center align-items-center">
-              <div class="p-3"><button type="button" class="btn btn-success">Enviar</button></div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
   </header>
+  
+  <main class="bg-light-subtle pb-3 pt-3 container">
+    
+    <div id="main-header" class="">
+      <div id="title" class=" text-center pt-2 pb-2 mb-2" style="background-color: #c3fc9d;">
+        <h1>Contactanos</h1>
+      </div>
+    <div id="Descripcion" class="bg-transparent">
+      <h2>Formulario de contacto</h2>
+      <p>Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos solicitados en el
+        siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
+        horas hábiles. Recuerda que nuestros horarios de atencion son: lunes a domingo desde las 09:00 hasta las
+        18:00 hrs, excepto feriados/festivos.</p>
+    </div>
+  </div>
+  <div id="Main-formularios" class="">
+    <div class="d-flex flex-column flex-md-row gap-4">
+        <div class="d-flex flex-column gap-4 flex-fill" id="formulario-right">
+            <div>
+                <label for="FormControlNombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="FormControlNombre" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="FormControlApellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="FormControlApellido" placeholder="Ingrese su Apellido">
+            </div>
+            <div>
+                <label for="FormControlRut" class="form-label">Rut</label>
+                <input type="text" class="form-control" id="FormControlRut" placeholder="Ingrese su Rut">
+            </div>
+            <div>
+                <label for="FormControlTelefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="FormControlTelefono" placeholder="Ingrese su Telefono">
+            </div>
+            <div>
+                <label for="FormControlEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="FormControlEmail" placeholder="Ejemplo:name@example.com">
+            </div>
+        </div>
+        <div class="d-flex flex-column gap-4 flex-fill" id="formulario-left">
+            <div>
+                <label for="FormControlClasificacion" class="form-label">Clasificación</label>
+                <input type="text" class="form-control" id="FormControlClasificacion" placeholder="">
+            </div>
+            <div>
+                <label for="DataListMotivo" class="form-label">Motivo</label>
+                <input class="form-control" list="datalistOptions" id="DataListMotivo" placeholder="-Seleccione un motivo-">
+                <datalist id="datalistOptions">
+                    <option value="Consultas">
+                    <option value="Solicitudes">
+                    <option value="Reclamos">
+                </datalist>
+            </div>
+            <div>
+                <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
+                <input type="text" class="form-control" id="FormControlBoleta" placeholder="">
+            </div>
+            <div>
+                <label for="FormControlText" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="FormControlText" rows="5" placeholder="Ingrese su comentario"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-4">
+      <button type="button" class="btn w-25 fs-5 btn-success">Enviar</button>
+    </div>
+</div>
+
+
+
+  </main>
   <footer>
     <nav class="navbar bg-dark-subtle border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
       <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
