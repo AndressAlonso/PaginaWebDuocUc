@@ -17,7 +17,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="font.css">
 </head>
-<body>
+<body class="bg-light">
   <header>
     <nav class="navbar rounded-bottom-2 bg-black border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
       <div class="container-fluid text-white">
@@ -59,8 +59,8 @@
       </div>
     </nav>
   </header>
-  <main class="container mt-4 mb-4 rounded-2 bg-white">
-    <div id="registro" class="bg-light d-flex container-md flex-column row-gap-3">
+  <main class="container mt-4 mb-4 rounded-32  bg-white">
+    <div id="registro" class="bg-white d-flex container-md flex-column row-gap-3">
       <div id="titulo" class="d-flex border-black border-bottom border-success-subtle pb-3 pt-3">
         <h1 class="">
           <svg width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,32 +79,31 @@
         <div id="datosPers-titulo">
           <h4>Ingreso de datos</h4>
           <p>Registro nos permitirá conocerte y no tener que solicitarte los datos nuevamente cuando quieras
-            comprar en TechTreasureTroop Los campos marcados (*) deben ser llenados obligatoriamente.</p>
+            comprar en TechTreasureTroop. Los campos marcados (*) deben ser llenados obligatoriamente.</p>
         </div>
         <div id="forms1" class="d-md-flex gap-4">
           <div id="form1-left" class="flex-fill gap-4 d-flex flex-column">
             <div id="rut">
               <label class="form-label" for="rut">Rut*</label>
-              <input type="text" id="f.rut" class="form-control w-75 w-75">
+              <input type="text" id="f.rut" class="form-control w-75 border-black border border-1 border-opacity-25">
             </div>
             <div id="telefonoPrincipal">
-              <label class="form-label" for="telefonPrincipal">Teléfono Principal Móvil o
-                fijo*</label>
-              <input type="text" id="f.telefonPrincipal" class="form-control w-75 w-75">
+              <label class="form-label" for="telefonPrincipal">Teléfono Principal Móvil o fijo*</label>
+              <input type="text" id="f.telefonPrincipal" class="form-control w-75 border-black border border-1 border-opacity-25">
             </div>
             <div id="email">
               <label class="form-label" for="email">Email*</label>
-              <input type="email" id="f.email" class="form-control w-75 w-75">
+              <input type="email" id="f.email" class="form-control w-75 border-black border border-1 border-opacity-25">
             </div>
           </div>
           <div id="form1-right" class="flex-fill d-flex flex-column gap-4">
             <div id="form1-nombre">
               <label class="form-label" for="nombre">Nombre*</label>
-              <input type="text" id="f.nombre" class="form-control w-75 w-75">
+              <input type="text" id="f.nombre" class="form-control w-75 border-black border border-1 border-opacity-25">
             </div>
             <div id="telefonOpc">
               <label class="form-label" for="telefonopc">Teléfono Opcional</label>
-              <input type="text" id="f.telefonopc" class="form-control w-75 w-75">
+              <input type="text" id="f.telefonopc" class="form-control w-75 border-black border border-1 border-opacity-25">
             </div>
           </div>
         </div>
@@ -119,35 +118,35 @@
             <div id="forms2" class="d-flex gap-4 flex-column">
               <div id="nombredireccion">
                 <label class="form-label" for="f.nombredireccion">Nombre dirección</label>
-                <input class="form-control" id="f.nombredireccion" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.nombredireccion" type="text">
               </div>
               <div id="direccion">
                 <label class="form-label" for="f.direccion">Dirección</label>
-                <input class="form-control" id="f.direccion" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.direccion" type="text">
               </div>
               <div id="numerodireccion">
                 <label class="form-label" for="f.numerodireccion">Numero dirección</label>
-                <input class="form-control" id="f.numerodireccion" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.numerodireccion" type="text">
               </div>
               <div id="piso/oficina/apto/depto">
                 <label class="form-label" for="f.piso/oficina/apto/depto">Piso/oficina/apto/depto.</label>
-                <input id="f.piso/oficina/apto/depto" type="text" class="form-control">
+                <input id="f.piso/oficina/apto/depto" type="text" class="form-control border-black border border-1 border-opacity-25">
               </div>
               <div id="comuna">
                 <label class="form-label" for="f.comuna">Comuna</label>
-                <input class="form-control" id="f.comuna" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.comuna" type="text">
               </div>
               <div id="region">
                 <label class="form-label" for="f.region">Región</label>
-                <input class="form-control" id="f.region" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.region" type="text">
               </div>
               <div id="ciudad">
                 <label class="form-label" for="f.ciudad">Ciudad</label>
-                <input class="form-control" id="f.ciudad" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.ciudad" type="text">
               </div>
             </div>
           </div>
-
+      
           <!-- Registro Contraseña -->
           <div class="col-md-6 d-flex flex-column gap-4 " id="registro-contraseña">
             <div id="contraseña-titulo" class="pt-3">
@@ -156,11 +155,11 @@
             <div id="form3" class="d-flex gap-4 flex-column">
               <div id="contraseña">
                 <label class="form-label" for="f.contraseña">Contraseña</label>
-                <input class="form-control" type="password" id="f.contraseña">
+                <input class="form-control border-black border border-1 border-opacity-25" type="password" id="f.contraseña">
               </div>
               <div id="confirmar.contraseña">
                 <label class="form-label" for="f.confirmar.contraseña">Confirmar Contraseña</label>
-                <input class="form-control" type="password" id="f.confirmar.contraseña">
+                <input class="form-control border-black border border-1 border-opacity-25" type="password" id="f.confirmar.contraseña">
               </div>
             </div>
             <div id="boton-registrar">
@@ -171,7 +170,7 @@
           </div>
         </div>
       </div>
-    </div>
+      
   </main>
   <footer>
     <nav class="navbar navbar-expand-lg pb-4 pt-4 text-light bg-black rounded-top-2 border-bottom border-body mt-3" data-bs-theme="dark">

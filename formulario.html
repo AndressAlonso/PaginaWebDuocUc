@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="">
 </head>
 
-<body class="">
+<body class="bg-light">
   <header>
     <nav class="navbar rounded-bottom-2 bg-black border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
       <div class="container-fluid text-white">
@@ -95,13 +95,12 @@
     </div>
   </header>
   
-  <main class="bg-light-subtle pb-3 pt-3 container">
-    
+  <main class="bg-white rounded-3 mt-4 mb-4 pb-3 pt-3 container">
     <div id="main-header" class="">
       <div id="title" class=" text-center pt-2 pb-2 mb-2" style="background-color: #c3fc9d;">
         <h1>Contactanos</h1>
       </div>
-    <div id="Descripcion" class="bg-transparent">
+    <div id="Descripcion" class="">
       <h2>Formulario de contacto</h2>
       <p>Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos solicitados en el
         siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
@@ -109,38 +108,38 @@
         18:00 hrs, excepto feriados/festivos.</p>
     </div>
   </div>
-  <div id="Main-formularios" class="">
+  <div id="Main-formularios" class="bg-white">
     <div class="d-flex flex-column flex-md-row gap-4">
-        <div class="d-flex flex-column gap-4 flex-fill" id="formulario-right">
+        <div class="d-flex  flex-column gap-4 flex-fill" id="formulario-right">
             <div>
                 <label for="FormControlNombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="FormControlNombre" placeholder="Ingrese su nombre">
+                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlNombre" placeholder="Ingrese su nombre">
             </div>
             <div>
                 <label for="FormControlApellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="FormControlApellido" placeholder="Ingrese su Apellido">
+                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlApellido" placeholder="Ingrese su Apellido">
             </div>
             <div>
                 <label for="FormControlRut" class="form-label">Rut</label>
-                <input type="text" class="form-control" id="FormControlRut" placeholder="Ingrese su Rut">
+                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlRut" placeholder="Ingrese su Rut">
             </div>
             <div>
                 <label for="FormControlTelefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" id="FormControlTelefono" placeholder="Ingrese su Telefono">
+                <input type="tel" class="form-control border-black border border-1 border-opacity-25" id="FormControlTelefono" placeholder="Ingrese su Telefono">
             </div>
             <div>
                 <label for="FormControlEmail" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="FormControlEmail" placeholder="Ejemplo:name@example.com">
+                <input type="email" class="form-control border-black border border-1 border-opacity-25" id="FormControlEmail" placeholder="Ejemplo:name@example.com">
             </div>
         </div>
         <div class="d-flex flex-column gap-4 flex-fill" id="formulario-left">
             <div>
                 <label for="FormControlClasificacion" class="form-label">Clasificación</label>
-                <input type="text" class="form-control" id="FormControlClasificacion" placeholder="">
+                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlClasificacion" placeholder="">
             </div>
             <div>
                 <label for="DataListMotivo" class="form-label">Motivo</label>
-                <input class="form-control" list="datalistOptions" id="DataListMotivo" placeholder="-Seleccione un motivo-">
+                <input class="form-control border-black border border-1 border-opacity-25" list="datalistOptions" id="DataListMotivo" placeholder="-Seleccione un motivo-">
                 <datalist id="datalistOptions">
                     <option value="Consultas">
                     <option value="Solicitudes">
@@ -149,11 +148,11 @@
             </div>
             <div>
                 <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
-                <input type="text" class="form-control" id="FormControlBoleta" placeholder="">
+                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlBoleta" placeholder="">
             </div>
             <div>
                 <label for="FormControlText" class="form-label">Comentarios</label>
-                <textarea class="form-control" id="FormControlText" rows="5" placeholder="Ingrese su comentario"></textarea>
+                <textarea class="form-control border-black border border-1 border-opacity-25" id="FormControlText" rows="5" placeholder="Ingrese su comentario"></textarea>
             </div>
         </div>
     </div>
@@ -161,6 +160,10 @@
       <button type="button" class="btn w-25 fs-5 btn-success">Enviar</button>
     </div>
 </div>
+
+
+
+
 
 
 
