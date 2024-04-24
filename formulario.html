@@ -10,12 +10,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
 </head>
 
 <body class="bg-light">
   <header>
-    <nav class="navbar rounded-bottom-2 bg-black border-bottom border-body navbar-expand-lg pb-4 pt-4" data-bs-theme="dark">
+    <nav class="navbar rounded-bottom-2 bg-black border-bottom border-body navbar-expand-lg pb-4 pt-4"
+      data-bs-theme="dark">
       <div class="container-fluid text-white">
         <img src="icons\anonymous_mask.png" alt="">
         <a class="navbar-brand text-white" href="index.html">TechTreasureTroop</a>
@@ -26,10 +27,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              
-              <a class="nav-link active text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-current="page" href="Login.html">
-                <svg class="m-1" xmlns="http://www.w3.org/2000/svg" width="17"
-                  height="19" viewBox="0 0 17 19" fill="none">
+
+              <a class="nav-link active text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                aria-current="page" href="Login.html">
+                <svg class="m-1" xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"
+                  fill="none">
                   <path
                     d="M16.0556 18.5001C15.5361 18.5001 15.1111 18.0838 15.1111 17.5751V15.7251C15.1111 14.1988 13.8361 12.9501 12.2778 12.9501H4.72222C3.16389 12.9501 1.88889 14.1988 1.88889 15.7251V17.5751C1.88889 18.0838 1.46389 18.5001 0.944444 18.5001C0.425 18.5001 0 18.0838 0 17.5751V15.7251C0 13.1721 2.11556 11.1001 4.72222 11.1001H12.2778C14.8844 11.1001 17 13.1721 17 15.7251V17.5751C17 18.0838 16.575 18.5001 16.0556 18.5001Z"
                     fill="#7A7A7A" />
@@ -55,7 +57,7 @@
         </div>
       </div>
     </nav>
-     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -94,72 +96,86 @@
       </div>
     </div>
   </header>
-  
+
   <main class="bg-white rounded-3 mt-4 mb-4 pb-3 pt-3 container">
     <div id="main-header" class="">
       <div id="title" class=" text-center pt-2 pb-2 mb-2" style="background-color: #c3fc9d;">
         <h1>Contactanos</h1>
       </div>
-    <div id="Descripcion" class="">
-      <h2>Formulario de contacto</h2>
-      <p>Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos solicitados en el
-        siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
-        horas hábiles. Recuerda que nuestros horarios de atencion son: lunes a domingo desde las 09:00 hasta las
-        18:00 hrs, excepto feriados/festivos.</p>
+      <div id="Descripcion" class="">
+        <h2>Formulario de contacto</h2>
+        <p>Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos solicitados en el
+          siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
+          horas hábiles. Recuerda que nuestros horarios de atencion son: lunes a domingo desde las 09:00 hasta las
+          18:00 hrs, excepto feriados/festivos.</p>
+      </div>
     </div>
-  </div>
-  <div id="Main-formularios" class="bg-white">
-    <div class="d-flex flex-column flex-md-row gap-4">
+    <div id="Main-formularios" class="bg-white">
+      <div class="d-flex flex-column flex-md-row gap-4">
         <div class="d-flex  flex-column gap-4 flex-fill" id="formulario-right">
-            <div>
-                <label for="FormControlNombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlNombre" placeholder="Ingrese su nombre">
-            </div>
-            <div>
-                <label for="FormControlApellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlApellido" placeholder="Ingrese su Apellido">
-            </div>
-            <div>
-                <label for="FormControlRut" class="form-label">Rut</label>
-                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlRut" placeholder="Ingrese su Rut">
-            </div>
-            <div>
-                <label for="FormControlTelefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control border-black border border-1 border-opacity-25" id="FormControlTelefono" placeholder="Ingrese su Telefono">
-            </div>
-            <div>
-                <label for="FormControlEmail" class="form-label">E-mail</label>
-                <input type="email" class="form-control border-black border border-1 border-opacity-25" id="FormControlEmail" placeholder="Ejemplo:name@example.com">
-            </div>
+          <div>
+            <label for="FormControlNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control border-black border border-1 border-opacity-25"
+              id="FormControlNombre" placeholder="Ingrese su nombre">
+          </div>
+          <div>
+            <label for="FormControlApellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control border-black border border-1 border-opacity-25"
+              id="FormControlApellido" placeholder="Ingrese su Apellido">
+          </div>
+          <div>
+            <label for="FormControlRut" class="form-label">Rut</label>
+            <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlRut"
+              placeholder="Ingrese su Rut">
+          </div>
+          <div>
+            <label for="FormControlTelefono" class="form-label">Telefono</label>
+            <input type="tel" class="form-control border-black border border-1 border-opacity-25"
+              id="FormControlTelefono" placeholder="Ingrese su Telefono">
+          </div>
+          <div>
+            <label for="FormControlEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control border-black border border-1 border-opacity-25"
+              id="FormControlEmail" placeholder="Ejemplo:name@example.com">
+          </div>
         </div>
         <div class="d-flex flex-column gap-4 flex-fill" id="formulario-left">
-            <div>
-                <label for="FormControlClasificacion" class="form-label">Clasificación</label>
-                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlClasificacion" placeholder="">
-            </div>
-            <div>
-                <label for="DataListMotivo" class="form-label">Motivo</label>
-                <input class="form-control border-black border border-1 border-opacity-25" list="datalistOptions" id="DataListMotivo" placeholder="-Seleccione un motivo-">
-                <datalist id="datalistOptions">
-                    <option value="Consultas">
-                    <option value="Solicitudes">
-                    <option value="Reclamos">
-                </datalist>
-            </div>
-            <div>
-                <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
-                <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlBoleta" placeholder="">
-            </div>
-            <div>
-                <label for="FormControlText" class="form-label">Comentarios</label>
-                <textarea class="form-control border-black border border-1 border-opacity-25" id="FormControlText" rows="5" placeholder="Ingrese su comentario"></textarea>
-            </div>
+          <div>
+            <label for="FormControlClasificacion" class="form-label">Clasificación</label>
+            <select id="id_lista_motivo"  name="id_lista_motivo" class="w-100 form-select border-black border border-1 border-opacity-25" data-role="none"
+              data-field-value="id_motivo" data-field-text="motivo">
+              <option value="-1" selected="selected">- Seleccione Motivo -</option>
+              <option value="2">Consultas</option>
+              <option value="3">Solicitudes</option>
+              <option value="4">Reclamos</option>
+            </select>
+          </div>
+          <div>
+            <label for="DataListMotivo" class="form-label">Motivo</label>
+            <select id="id_lista_motivo"  name="id_lista_motivo" class="w-100 form-select border-black border border-1 border-opacity-25" data-role="none"
+              data-field-value="id_motivo" data-field-text="motivo">
+              <option value="-1" selected="selected">Seleccione Motivo</option>
+              <option value="2">Consultas</option>
+              <option value="3">Solicitudes</option>
+              <option value="4">Reclamos</option>
+            </select>
+          </div>
+          <div>
+            <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
+            <input type="text" class="form-control border-black border border-1 border-opacity-25"
+              id="FormControlBoleta" placeholder="">
+          </div>
+          <div>
+            <label for="FormControlText" class="form-label">Comentarios</label>
+            <textarea class="form-control border-black border border-1 border-opacity-25" id="FormControlText" rows="5"
+              placeholder="Ingrese su comentario"></textarea>
+          </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mt-4">
+        <button type="button" class="btn w-25 fs-5 btn-success">Enviar</button>
+      </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center mt-4">
-      <button type="button" class="btn w-25 fs-5 btn-success">Enviar</button>
-    </div>
-</div>
 
 
 
@@ -169,30 +185,33 @@
 
   </main>
   <footer>
-    <nav class="navbar navbar-expand-lg pb-4 pt-4 text-light bg-black rounded-top-2 border-bottom border-body mt-3" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg pb-4 pt-4 text-light bg-black rounded-top-2 border-bottom border-body mt-3"
+      data-bs-theme="dark">
       <div class="container-fluid">
-          <div class="row w-100">
-            
-              <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center mt-3">
-                  <h4>Ventas</h4>
-                  <h5>+56927744345</h5>
-              </div>
-            
-              <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center mt-3">
-                  <h4 class="text-center">Ventas Empresas</h4>
-                  <a href="formulario.html" class="text-decoration-none">Contacto Venta Empresa</a>
-              </div>
-            
-              <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3" >
-                  <a href="index.html" class="text-decoration-none d-flex justify-content-center align-items-center text-white">
-                      <img src="icons/anonymous_mask.png" alt="">
-                      TechTreasureTroop
-                  </a>
-              </div>
+        <div class="row w-100">
+
+          <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center mt-3">
+            <h4>Ventas</h4>
+            <h5>+56927744345</h5>
           </div>
+
+          <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center mt-3">
+            <h4 class="text-center">Ventas Empresas</h4>
+            <a href="formulario.html" class="text-decoration-none">Contacto Venta Empresa</a>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3">
+            <a href="index.html"
+              class="text-decoration-none d-flex justify-content-center align-items-center text-white">
+              <img src="icons/anonymous_mask.png" alt="">
+              TechTreasureTroop
+            </a>
+          </div>
+        </div>
       </div>
-  </nav>
+    </nav>
   </footer>
 </body>
+<script src="Validar.js"></script>
 
 </html>
