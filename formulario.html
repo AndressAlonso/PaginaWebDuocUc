@@ -11,10 +11,42 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="Validar.css">
+    <link rel="stylesheet" href="css/Validar.css">
+    <script src="js/Formulario.js"></script>
+    <script src="js/Validar.js"></script>
 </head>
 
 <body class="bg-light">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+            Iniciar Sesión
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body border-bottom-0 m-auto">
+          <div id="rut-login" class=" text-center">
+            <label class="form-label" for="rut-login">RUT</label>
+            <input type="text" id="f.rut-login" class="form-control border-dark border-opacity-50"
+              placeholder="12765832-9">
+            <div id="contraseña-login" class="mt-3 mb-3">
+              <label class="form-label" for="contraseña-login">Password</label>
+              <input type="password" id="f.contraseña-login"
+                class="form-control border-dark border-opacity-50" placeholder="Tu Contraseña">
+            </div>
+            <button type="button" class="btn w-100 bg-dark text-white ">Iniciar Sesión</button>
+            
+          </div>
+          <div class="modal-footer text-center d-flex text-black border-top-0">
+            <a href="Login.html" class="w-100 h-100"><button class="btn link-body-emphasis">¿No tienes cuenta? Regístrate</button></a>
+            <a href="" class="link-body-emphasis w-100 text-decoration-none">¿Olvidaste tu contraseña?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <header>
     <nav class="navbar rounded-bottom-2 bg-black border-bottom border-body navbar-expand-lg pb-4 pt-4"
       data-bs-theme="dark">
@@ -58,125 +90,87 @@
         </div>
       </div>
     </nav>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
-              <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"
-                fill="none">
-                <path
-                  d="M16.0556 18.5001C15.5361 18.5001 15.1111 18.0838 15.1111 17.5751V15.7251C15.1111 14.1988 13.8361 12.9501 12.2778 12.9501H4.72222C3.16389 12.9501 1.88889 14.1988 1.88889 15.7251V17.5751C1.88889 18.0838 1.46389 18.5001 0.944444 18.5001C0.425 18.5001 0 18.0838 0 17.5751V15.7251C0 13.1721 2.11556 11.1001 4.72222 11.1001H12.2778C14.8844 11.1001 17 13.1721 17 15.7251V17.5751C17 18.0838 16.575 18.5001 16.0556 18.5001Z"
-                  fill="#7A7A7A" />
-                <path
-                  d="M8.50054 9.25C5.89388 9.25 3.77832 7.178 3.77832 4.625C3.77832 2.072 5.89388 0 8.50054 0C11.1072 0 13.2228 2.072 13.2228 4.625C13.2228 7.178 11.1072 9.25 8.50054 9.25ZM8.50054 1.85C6.94221 1.85 5.66721 3.09875 5.66721 4.625C5.66721 6.15125 6.94221 7.4 8.50054 7.4C10.0589 7.4 11.3339 6.15125 11.3339 4.625C11.3339 3.09875 10.0589 1.85 8.50054 1.85Z"
-                  fill="#7A7A7A" />
-              </svg>
-              Mi cuenta
-            </h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="rut-login" class="mb-2">
-              <label class="form-label" for="rut-login">Rut</label>
-              <input type="text" id="f.rut-login" class="form-control border-dark border-opacity-50 w-75 w-75"
-                placeholder="Ej: 1234567-5">
-              <div id="contraseña-login" class="mt-3 mb-3">
-                <label class="form-label" for="contraseña-login">Contraseña</label>
-                <input type="password" id="f.contraseña-login"
-                  class="form-control border-dark border-opacity-50 w-75 w-75" placeholder="">
-              </div>
-              <a href="">¿Olvidaste tu contraseña?</a>
-            </div>
-            <div class="modal-footer text-black">
-              <a href="Login.html"><button class="btn btn-outline-success ">¿No tienes cuenta? Registrate</button></a>
-              <button type="button" class="btn btn-close-white btn-outline-dark">Iniciar Sesion</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </header>
 
   <main class="bg-white rounded-3 mt-4 mb-4 pb-3 pt-3 container">
     <div id="main-header" class="">
-      <div id="title" class=" text-center pt-2 pb-2 mb-2" style="background-color: #c3fc9d;">
-        <h1>Contactanos</h1>
+      <div id="title" class="text-center pb-2 mb-2 border border-dark-subtle border-2 border-bottom-0 border-top-0">
+        <h1>- Contáctanos -</h1>
       </div>
-      <div id="Descripcion" class="">
-        <h2>Formulario de contacto</h2>
+      <div id="Descripcion" class="border border-dark-subtle border-2 border-bottom-0 border-top-0 container ">
+        <h2 class="fs-5">Formulario de contacto</h2>
         <p>Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos solicitados en el
           siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
-          horas hábiles. Recuerda que nuestros horarios de atencion son: lunes a domingo desde las 09:00 hasta las
-          18:00 hrs, excepto feriados/festivos.</p>
+          horas hábiles. Recuerda que nuestros horarios de atención son: lunes a domingo desde las 09:00 hasta las
+          18:00 horas, excepto feriados/festivos.</p>
       </div>
     </div>
+    
     <div id="Main-formularios" class="bg-white">
-      <div class="d-flex flex-column flex-md-row gap-4">
-        <div class="d-flex  flex-column gap-4 flex-fill" id="formulario-right">
-          <div>
-            <label for="FormControlNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control border-black border border-1 border-opacity-25"
-              id="FormControlNombre" placeholder="Ingrese su nombre">
+      <form>
+      <div class="d-flex flex-wrap justify-content-between gap-2">
+       
+          <div class="d-flex flex-column gap-3" style="flex: 1 1 48%; min-width: 280px;">
+          
+              <div class="form-group">
+                  <label for="FormControlNombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" name="nombre" id="FormControlNombre">
+              </div>
+              <div>
+                  <label for="FormControlApellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" name="apellido" id="FormControlApellido">
+              </div>
+              <div>
+                  <label for="FormControlRut" class="form-label">RUT</label>
+                  <input type="text" class="form-control" name="rut" id="FormControlRut" placeholder="Sin puntos y con guion">
+              </div>
+              <div>
+                  <label for="FormControlTelefono" class="form-label">Teléfono</label>
+                  <div class="d-flex gap-1">
+                      <select name="TelPaises" id="SSTelPaises" name="sufijotelefono" class="form-select">  
+                      </select>
+                      <input type="tel" class="form-control" name="telefono" id="FormControlTelefono" placeholder="934454264">
+                  </div>
+              </div>
+              <div>
+                  <label for="FormControlEmail" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" name="email" id="FormControlEmail" placeholder="Name@example.com">
+              </div>
           </div>
-          <div>
-            <label for="FormControlApellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control border-black border border-1 border-opacity-25"
-              id="FormControlApellido" placeholder="Ingrese su Apellido">
+          <div class="d-flex flex-column gap-3" style="flex: 1 1 48%; min-width: 280px;">
+              <div>
+                  <label for="FormControlMotivo" class="form-label">Motivo</label>
+                  <select id="id_lista_motivo" name="motivo" class="form-select" >
+                      <option value="-1" selected>- Seleccione Motivo -</option>
+                      <option value="2">Consultas</option>
+                      <option value="3">Solicitudes</option>
+                      <option value="4">Reclamos</option>
+                  </select>
+              </div>
+              <div>
+                  <label for="DataListclasificacion" class="form-label">Clasificación</label>
+                  <select id="id_lista_clasificacion" name="clasificacion" class="form-select">
+                      <option value="1" selected></option>
+                  </select>
+              </div>
+              <div>
+                  <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
+                  <input type="text" class="form-control" name="factura/boleta" id="FormControlBoleta">
+              </div>
+              <div>
+                  <label for="FormControlText" class="form-label">Comentarios</label>
+                  <textarea class="form-text w-100" name="comentario" id="FormControlText" rows="10" placeholder="Ingrese su comentario">
+                  </textarea>
+              </div>
           </div>
-          <div>
-            <label for="FormControlRut" class="form-label">Rut</label>
-            <input type="text" class="form-control border-black border border-1 border-opacity-25" id="FormControlRut"
-              placeholder="Ingrese su Rut">
-          </div>
-          <div>
-            <label for="FormControlTelefono" class="form-label">Telefono</label>
-            <input type="tel" class="form-control border-black border border-1 border-opacity-25"
-              id="FormControlTelefono" placeholder="Ingrese su Telefono">
-          </div>
-          <div>
-            <label for="FormControlEmail" class="form-label">E-mail</label>
-            <input type="email" class="form-control border-black border border-1 border-opacity-25"
-              id="FormControlEmail" placeholder="Ejemplo:name@example.com">
-          </div>
-        </div>
-        <div class="d-flex flex-column gap-4 flex-fill" id="formulario-left">
-          <div>
-            <label for="FormControlClasificacion" class="form-label">Clasificación</label>
-            <select id="id_lista_motivo"  name="id_lista_motivo" class="w-100 form-select border-black border border-1 border-opacity-25" data-role="none"
-              data-field-value="id_motivo" data-field-text="motivo">
-              <option value="-1" selected="selected">- Seleccione Motivo -</option>
-              <option value="2">Consultas</option>
-              <option value="3">Solicitudes</option>
-              <option value="4">Reclamos</option>
-            </select>
-          </div>
-          <div>
-            <label for="DataListMotivo" class="form-label">Motivo</label>
-            <select id="id_lista_motivo"  name="id_lista_motivo" class="w-100 form-select border-black border border-1 border-opacity-25" data-role="none"
-              data-field-value="id_motivo" data-field-text="motivo">
-              <option value="-1" selected="selected">Seleccione Motivo</option>
-              <option value="2">Consultas</option>
-              <option value="3">Solicitudes</option>
-              <option value="4">Reclamos</option>
-            </select>
-          </div>
-          <div>
-            <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
-            <input type="text" class="form-control border-black border border-1 border-opacity-25"
-              id="FormControlBoleta" placeholder="">
-          </div>
-          <div>
-            <label for="FormControlText" class="form-label">Comentarios</label>
-            <textarea class="form-control border-black border border-1 border-opacity-25" id="FormControlText" rows="5"
-              placeholder="Ingrese su comentario"></textarea>
-          </div>
-        </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center mt-4">
-        <button type="button" id="bEnviar" class="btn w-25 fs-5 btn-success">Enviar</button>
+      <div class="d-flex justify-content-center mt-4">
+          <input type="submit" id="bEnviar" class="btn btn-dark">
       </div>
-    </div>
+    </form>
+  </div>
+  
 
 
 

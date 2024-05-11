@@ -88,21 +88,21 @@
           <div id="form1-left" class="flex-fill gap-4 d-flex flex-column">
             <div id="rut" class="form-group">
               <label class="form-label" for="rut">Rut*</label>
-              <input type="text" id="f.rut" class="form-control w-75 border-black border border-1 border-opacity-25">
+              <input type="text" id="f.rut" class="form-control w-75 border-black border border-1 border-opacity-25" placeholder="12323432-5">
             </div>
             <div id="telefonoPrincipal" class="form-group">
-              <label class="form-label" for="telefonPrincipal">Teléfono Principal Móvil o fijo*</label>
-              <input type="text" id="f.telefonPrincipal" class="form-control w-75 border-black border border-1 border-opacity-25">
+              <label class="form-label" for="telefonPrincipal" >Teléfono Principal Móvil o fijo*</label>
+              <input type="text" id="f.telefonPrincipal" class="form-control w-75 border-black border border-1 border-opacity-25" placeholder="Tu numero de telefono">
             </div>
             <div id="email">
               <label class="form-label" for="email">Email*</label>
-              <input type="email" id="f.email" class="form-control w-75 border-black border border-1 border-opacity-25">
+              <input type="email" id="f.email" class="form-control w-75 border-black border border-1 border-opacity-25 " placeholder="name@example.cl">
             </div>
           </div>
           <div id="form1-right" class="flex-fill d-flex flex-column gap-4">
             <div id="form1-nombre">
               <label class="form-label" for="nombre">Nombre*</label>
-              <input type="text" id="f.nombre" class="form-control w-75 border-black border border-1 border-opacity-25">
+              <input type="text" id="f.nombre" class="form-control w-75 border-black border border-1 border-opacity-25" placeholder="Tu nombre">
             </div>
           </div>
         </div>
@@ -117,31 +117,31 @@
             <div id="forms2" class="d-flex gap-4 flex-column">
               <div id="nombredireccion">
                 <label class="form-label" for="f.nombredireccion">Nombre dirección</label>
-                <input class="form-control border-black border border-1 border-opacity-25" id="f.nombredireccion" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.nombredireccion" type="text" placeholder="Casa / Trabajo">
               </div>
               <div id="direccion">
                 <label class="form-label" for="f.direccion">Dirección</label>
-                <input class="form-control border-black border border-1 border-opacity-25" id="f.direccion" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.direccion" type="text" placeholder="Serrano">
               </div>
               <div id="numerodireccion">
                 <label class="form-label" for="f.numerodireccion">Numero dirección</label>
-                <input class="form-control border-black border border-1 border-opacity-25" id="f.numerodireccion" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.numerodireccion" type="text" placeholder="1115">
               </div>
               <div id="piso/oficina/apto/depto">
-                <label class="form-label" for="f.piso/oficina/apto/depto">Piso/oficina/apto/depto.</label>
-                <input id="f.piso/oficina/apto/depto" type="text" class="form-control border-black border border-1 border-opacity-25">
+                <label class="form-label" for="f.piso/oficina/apto/depto">Descripción</label>
+                <input id="f.piso/oficina/apto/depto" type="text" class="form-control border-black border border-1 border-opacity-25" placeholder="Piso/oficina/apto/depto">
               </div>
               <div id="comuna">
                 <label class="form-label" for="f.comuna">Comuna</label>
-                <input class="form-control border-black border border-1 border-opacity-25" id="f.comuna" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.comuna" type="text" placeholder="Melipilla">
               </div>
               <div id="region">
                 <label class="form-label" for="f.region">Región</label>
-                <input class="form-control border-black border border-1 border-opacity-25" id="f.region" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.region" type="text" placeholder="Metropolitana">
               </div>
               <div id="ciudad">
                 <label class="form-label" for="f.ciudad">Ciudad</label>
-                <input class="form-control border-black border border-1 border-opacity-25" id="f.ciudad" type="text">
+                <input class="form-control border-black border border-1 border-opacity-25" id="f.ciudad" type="text" placeholder="Melipilla">
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@
             <div id="boton-registrar">
               <p>Su contraseña debe contener mínimo 7 dígitos, al menos una letra Mayúscula, números y símbolos tales
                 como @%!*?&</p>
-              <button class="btn btn-light w-100">Registrarse</button>
+              <button class="btn btn-dark w-100">Registrarse</button>
             </div>
           </div>
         </div>
@@ -200,34 +200,27 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
-            <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"
-              fill="none">
-              <path
-                d="M16.0556 18.5001C15.5361 18.5001 15.1111 18.0838 15.1111 17.5751V15.7251C15.1111 14.1988 13.8361 12.9501 12.2778 12.9501H4.72222C3.16389 12.9501 1.88889 14.1988 1.88889 15.7251V17.5751C1.88889 18.0838 1.46389 18.5001 0.944444 18.5001C0.425 18.5001 0 18.0838 0 17.5751V15.7251C0 13.1721 2.11556 11.1001 4.72222 11.1001H12.2778C14.8844 11.1001 17 13.1721 17 15.7251V17.5751C17 18.0838 16.575 18.5001 16.0556 18.5001Z"
-                fill="#7A7A7A" />
-              <path
-                d="M8.50054 9.25C5.89388 9.25 3.77832 7.178 3.77832 4.625C3.77832 2.072 5.89388 0 8.50054 0C11.1072 0 13.2228 2.072 13.2228 4.625C13.2228 7.178 11.1072 9.25 8.50054 9.25ZM8.50054 1.85C6.94221 1.85 5.66721 3.09875 5.66721 4.625C5.66721 6.15125 6.94221 7.4 8.50054 7.4C10.0589 7.4 11.3339 6.15125 11.3339 4.625C11.3339 3.09875 10.0589 1.85 8.50054 1.85Z"
-                fill="#7A7A7A" />
-            </svg>
-            Mi cuenta
+            Iniciar Sesion
           </h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <div id="rut-login" class="mb-2">
-            <label class="form-label" for="rut-login">Rut</label>
-            <input type="text" id="f.rut-login" class="form-control border-dark border-opacity-50 w-75 w-75"
-              placeholder="Ej: 1234567-5">
+        <div class="modal-body border-bottom-0 m-auto">
+          <div id="rut-login" class=" text-center">
+            <label class="form-label" for="rut-login">RUT</label>
+            <input type="text" id="f.rut-login" class="form-control border-dark border-opacity-50"
+              placeholder="12765832-9">
             <div id="contraseña-login" class="mt-3 mb-3">
-              <label class="form-label" for="contraseña-login">Contraseña</label>
+              <label class="form-label" for="contraseña-login">Password</label>
               <input type="password" id="f.contraseña-login"
-                class="form-control border-dark border-opacity-50 w-75 w-75" placeholder="">
+                class="form-control border-dark border-opacity-50" placeholder="Tu Contraseña">
             </div>
-            <a href="">¿Olvidaste tu contraseña?</a>
+            <button type="button" class="btn w-100 bg-dark text-white ">Iniciar Sesión</button>
+            
           </div>
-          <div class="modal-footer text-black">
-            <a href="Login.html"><button class="btn btn-outline-success ">¿No tienes cuenta? Registrate</button></a>
-            <button type="button" class="btn btn-close-white btn-outline-dark">Iniciar Sesion</button>
+          <div class="modal-footer text-center d-flex text-black border-top-0">
+            <a href="Login.html" class="w-100 h-100"><button class="btn link-body-emphasis">¿No tienes cuenta? Regístrate</button></a>
+            <a href="" class="link-body-emphasis w-100 text-decoration-none">¿Olvidaste tu contraseña?</a>
+         
           </div>
         </div>
       </div>
