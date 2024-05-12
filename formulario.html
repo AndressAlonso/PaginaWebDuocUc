@@ -10,10 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="css/Validar.css">
+    <link rel="stylesheet" href="css/font.css">
+    
     <script src="js/Formulario.js"></script>
-    <script src="js/Validar.js"></script>
+    
 </head>
 
 <body class="bg-light">
@@ -108,39 +108,43 @@
     </div>
     
     <div id="Main-formularios" class="bg-white">
-      <form>
+      <form id="formContacto">
       <div class="d-flex flex-wrap justify-content-between gap-2">
        
           <div class="d-flex flex-column gap-3" style="flex: 1 1 48%; min-width: 280px;">
           
               <div class="form-group">
-                  <label for="FormControlNombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" name="nombre" id="FormControlNombre">
+                  <label for="FormControlNombre" class="form-label">Nombre*</label>
+                  <input type="text" class="form-control" placeholder="Tu nombre" name="nombre" id="FormControlNombre">
               </div>
               <div>
-                  <label for="FormControlApellido" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" name="apellido" id="FormControlApellido">
+                  <label for="FormControlApellido" class="form-label">Apellido*</label>
+                  <input type="text" class="form-control" name="apellido" placeholder="Tu apellido" id="FormControlApellido">
               </div>
               <div>
-                  <label for="FormControlRut" class="form-label">RUT</label>
-                  <input type="text" class="form-control" name="rut" id="FormControlRut" placeholder="Sin puntos y con guion">
+                  <label for="FormControlRut" class="form-label">RUT*</label>
+                  <input type="text" class="form-control" name="rut" id="FormControlRut" placeholder="Tu RUT">
+                  <span class="text-black-50">El RUT debe ser sin puntos y con guion. Ejemplo: 12123123-1</span>
               </div>
               <div>
-                  <label for="FormControlTelefono" class="form-label">Teléfono</label>
+                  <label for="FormControlTelefono" class="form-label">Teléfono*</label>
                   <div class="d-flex gap-1">
                       <select name="TelPaises" id="SSTelPaises" name="sufijotelefono" class="form-select">  
                       </select>
-                      <input type="tel" class="form-control" name="telefono" id="FormControlTelefono" placeholder="934454264">
+                      <input type="tel" class="form-control" name="telefono" id="FormControlTelefono" placeholder="Tu Numero de Telefono">
+                      
                   </div>
+                  <span class="text-black-50">El número de teléfono debe contener más de 9 números</span>
               </div>
               <div>
-                  <label for="FormControlEmail" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" name="email" id="FormControlEmail" placeholder="Name@example.com">
+                  <label for="FormControlEmail" class="form-label">Correo Electrónico*</label>
+                  <input type="email" class="form-control" name="email" id="FormControlEmail" placeholder="Tu correo">
+                  <span class="text-black-50">El Correo Debe Seguir el Siguiente Ejemplo: name@example.com</span>
               </div>
           </div>
           <div class="d-flex flex-column gap-3" style="flex: 1 1 48%; min-width: 280px;">
               <div>
-                  <label for="FormControlMotivo" class="form-label">Motivo</label>
+                  <label for="FormControlMotivo" class="form-label">Motivo*</label>
                   <select id="id_lista_motivo" name="motivo" class="form-select" >
                       <option value="-1" selected>- Seleccione Motivo -</option>
                       <option value="2">Consultas</option>
@@ -149,35 +153,28 @@
                   </select>
               </div>
               <div>
-                  <label for="DataListclasificacion" class="form-label">Clasificación</label>
+                  <label for="DataListclasificacion" class="form-label">Clasificación*</label>
                   <select id="id_lista_clasificacion" name="clasificacion" class="form-select">
-                      <option value="1" selected></option>
+                      <option value="-1" selected>-Selecciona un Motivo-</option>
                   </select>
               </div>
               <div>
                   <label for="FormControlBoleta" class="form-label">Numero de Boleta o Factura</label>
-                  <input type="text" class="form-control" name="factura/boleta" id="FormControlBoleta">
+                  <input type="text" class="form-control" name="factura/boleta" placeholder="Tu Numero de Boleta o Factura"  id="FormControlBoleta">
               </div>
               <div>
                   <label for="FormControlText" class="form-label">Comentarios</label>
-                  <textarea class="form-text w-100" name="comentario" id="FormControlText" rows="10" placeholder="Ingrese su comentario">
+                  <textarea class="form-control w-100" name="comentario" id="FormControlText" rows="7" placeholder="Tu comentario">
                   </textarea>
               </div>
           </div>
       </div>
-      <div class="d-flex justify-content-center mt-4">
-          <input type="submit" id="bEnviar" class="btn btn-dark">
+      <div class="d-flex justify-content-center mt-4 flex-column gap-3 justify-content-center align-items-center">
+          <div id="errores"></div>
+          <input type="submit" id="bEnviar" class="btn btn-dark w-50">
       </div>
     </form>
   </div>
-  
-
-
-
-
-
-
-
   </main>
   <footer>
     <nav class="navbar navbar-expand-lg pb-4 pt-4 text-light bg-black rounded-top-2 border-bottom border-body mt-3"
@@ -207,6 +204,8 @@
     </nav>
   </footer>
 </body>
-<script src="Validar.js"></script>
+
+<script src="js/Validar.js"></script>
+<link rel="stylesheet" href="css/Validar.css">
 
 </html>
