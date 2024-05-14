@@ -11,6 +11,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="font.css">
+  <script src="js/mindicador.js"></script>
   <link rel="stylesheet" href="detalle_producto.css">
 </head>
 
@@ -116,10 +117,16 @@
                             <li>Peso: 2.25 Kg</li>
                         </ul>
                     </p>
-                    <h3 class="text-success">$999.99</h3>
+                  <div>
+                    <div class="d-flex gap-1">
+                    <h3 class="text-success" id="precioClp">15000</h3><h3 class="text-success" id="divisa">divisa</h3></div>
+                    <select name="indicador" id="ssindicador">
+                      <option value="-1">Eliga Divisa</option>
+                    </select>
+                  </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <button class="btn btn-primary me-md-2" type="button">Añadir al carrito</button>
-                      <button class="btn btn-success" type="button">Comprar</button>
+                      <button class="btn btn-dark me-md-2" type="button">Añadir al carrito</button>
+                      <button class="btn btn-dark" type="button">Comprar</button>
                   </div>
                 </div>
             </div>
