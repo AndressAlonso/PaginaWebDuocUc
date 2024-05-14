@@ -13,6 +13,9 @@ function validarInput(inputID) {
         input.classList.add("correct");
         console.log(input.selectedIndex);
       } else {
+        let ssclasi = document.getElementById("id_lista_clasificacion");
+        ssclasi.classList.add("incorrect")
+        ssclasi.classList.remove("correct")
         input.classList.add("incorrect");
         input.classList.remove("correct");
       }
@@ -26,7 +29,7 @@ function validarInput(inputID) {
       }
     });
     input.addEventListener("change", function () {
-      if (input.selectedIndex !== 0) {
+        if (input.selectedIndex !== 0) {
         input.classList.remove("incorrect");
         input.classList.add("correct");
         console.log(input.selectedIndex);
