@@ -131,7 +131,7 @@ function validarFormulario() {
     });
     selects.forEach(sltc => {
       if (sltc.classList.contains("incorrect")){
-        mensajesError.push("*"+`El campo ${sltc.name.slice(0,1).toLocaleUpperCase() + sltc.name.slice(1,sltc.name.length)} tiene q ser seleccionado.`);
+        mensajesError.push("*"+`El campo ${sltc.name.slice(0,1).toLocaleUpperCase() + sltc.name.slice(1,sltc.name.length)} tiene que ser seleccionado.`);
       }
   });
     if (mensajesError.length > 0) {
